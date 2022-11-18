@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/get-list/'
+  publicPath: '/random-list/'
 }
