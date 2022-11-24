@@ -8,11 +8,19 @@ const routes = [{
   path: "*",
   name: "Home",
   component: Home,
+  meta: {
+    title: "隨機抽驗名單工具"
+  }
 }];
 
 const router = new VueRouter({
   mode: 'history',
   routes,
 });
+
+router.beforeEach((to, from, next) => {
+  window.document.title = to.meta.title;
+  next()
+})
 
 export default router;

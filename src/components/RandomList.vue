@@ -68,6 +68,8 @@
           :max-height="targetData.tableData.length > 0 ? '750' : '200'"
           :header-cell-style="{ background: '#2c3e50', color: '#ffffff' }"
         >
+          <el-table-column type="index" label="序列" width="70" align="left">
+          </el-table-column>
           <el-table-column prop="serialNum" label="流水號" width="120">
           </el-table-column>
           <el-table-column prop="productName" label="產品名稱" min-width="200">
